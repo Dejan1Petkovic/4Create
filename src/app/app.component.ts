@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {  Component } from '@angular/core';
+import {  UserTableComponent } from './components/user-table/user-table.component';
+import {  MatDialogModule } from '@angular/material/dialog';
+import {  MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [MatDialogModule, UserTableComponent, MatToolbarModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = '4create';

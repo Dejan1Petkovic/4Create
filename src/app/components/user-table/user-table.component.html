@@ -1,0 +1,17 @@
+<button class="add-user" mat-flat-button (click)="openAddUserModal()" [disabled]="!(canAddUser$ | async)">Add User</button>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Active</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users$ | async">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td><button mat-flat-button (click)="toggleActive(user)">{{ user.active ? 'Activate' : 'Deactivate' }}</button></td>
+    </tr>
+  </tbody>
+</table>
