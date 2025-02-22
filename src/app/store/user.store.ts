@@ -15,7 +15,8 @@ export class UserStore extends EntityStore<UserState> {
   private setInitialUsers() {
     const initialUsers: User[] = [
       { id: 1, name: 'Deki', active: true },
-      { id: 2, name: 'Marko', active: false }
+      { id: 2, name: 'Marko', active: true },
+      { id: 3, name: 'Stiv', active: false }
     ];
     this.set(initialUsers);
   }

@@ -1,34 +1,23 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-
-    th, td {
-        padding: 12px 15px;
-        border: 1px solid #ddd;
-      }
-      
-      th {
-        background-color: #f4f4f4;
-      }
-      
-      tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
-      }
-      
-      tbody tr:hover {
-        background-color: #f1f1f1;
-      }
-}
-  
-  
-
 .add-user {
     justify-self: end;
-    display: flex
-;
+    display: flex;
     margin: 20px;
+}
+
+.table-holder {
+  width: 90%;
+  margin: auto;
+
+  table {
+    background-color: transparent;
+
+    .action-column {
+      width: 250px;
+    }
+  }
+
+  .no-users {
+    text-align: center;
+  }
 }
   

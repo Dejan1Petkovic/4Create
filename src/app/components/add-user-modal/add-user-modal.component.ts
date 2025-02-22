@@ -41,11 +41,9 @@ export class AddUserModalComponent implements OnInit {
       name: ['', 
         {
           validators: [Validators.required], 
-          asyncValidators: [uniqueNameValidator(this.userService)], 
-          updateOn: 'blur'
+          asyncValidators: [uniqueNameValidator(this.userService)]
         }
-      ],
-      active: [false]
+      ]
     });
   }
 
